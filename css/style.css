@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    background-color: #bcb2ff;
+    font-family: 'Lato', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#box{
+    width: 50%;
+    padding: 22px;
+    border-radius: 10px;
+    background-color: #e0dcff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.row{
+    width: 100%;
+    margin: 2rem;
+    margin-left: 0;
+}
+
+/* Button Styles */
+.btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #9080f9;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover State */
+  .btn:hover {
+    background-color: #a593ff;
+    cursor: pointer;
+  }
+  
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    #box{
+        width: 80%;
+        padding: 14px;
+        border-radius: 8px;
+    }
+}
